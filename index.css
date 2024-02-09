@@ -1,2 +1,213 @@
-/* CSS Document */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  margin: 0;
+}
+
+:root {
+  --body-fonts: "Poppins", sans-serif;
+  --specific-fonts: "Playfair Display", serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+
+  align-items: center;
+  height: 150px;
+  padding: 10px;
+}
+
+.left {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.left a {
+  text-decoration: none;
+  color: orange;
+  font-size: 25px;
+}
+.navlinks {
+  display: flex;
+  gap: 1rem;
+}
+.bg {
+  background-image: url("../Image 1@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* width: 100vw; */
+  height: 150vh;
+}
+
+.middle {
+  position: relative;
+  left: 20%;
+  top: 25%;
+  width: 60%;
+}
+.siteheader {
+  color: orange;
+  font-size: 100px;
+  max-width: 500px;
+  font-family: var(--specific-fonts);
+}
+.sitesubheader {
+  color: orange;
+  font-size: 50px;
+  font-family: var(--body-fonts);
+}
+.menubutton {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: var(--body-fonts);
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.menubutton:hover {
+  background-color: black;
+  border: 2px solid orange;
+}
+.menubutton a {
+  text-decoration: none;
+  color: white;
+}
+.menusection {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid orange;
+}
+.menusectiontext {
+  color: orange;
+  font-size: 80px;
+  font-family: var(--body-fonts);
+  text-decoration: underline;
+}
+.dishheader {
+  color: orange;
+  font-weight: bold;
+  font-family: var(--specific-fonts);
+  font-size: 30px;
+  text-align: center;
+}
+.dishtext {
+  color: orange;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 800px;
+  font-family: var(--body-fonts);
+}
+.price {
+  margin-top: 100px;
+}
+.footer {
+  background-color: black;
+  margin-top: 40px;
+  color: orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footerheader {
+  font-size: 40px;
+  font-weight: bold;
+}
+.footertext {
+  font-size: 30px;
+}
+.footerlogoimg {
+  height: 125px;
+}
+
+@media (min-width: 750px) {
+  .logo {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 680px) {
+  .siteheader {
+    font-size: 50px;
+  }
+  .sitesubheader {
+    font-size: 25px;
+  }
+  .menubutton {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .menusectiontext {
+    font-size: 35px;
+  }
+  .dishheader {
+    font-size: 15px;
+  }
+  .dishtext {
+    font-size: 15px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .footerdiv {
+    margin-top: 15px;
+  }
+  .footerheader {
+    font-size: 25px;
+  }
+  .footertext {
+    font-size: 15px;
+  }
+  .footerlogoimg {
+    height: 90px;
+  }
+  .bg {
+    background-position: right 45% bottom 0%;
+  }
+  .middle {
+    position: relative;
+    left: 10px;
+    top: 50px;
+    width: 100%;
+  }
+}/* CSS Document */
 
